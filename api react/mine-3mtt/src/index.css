@@ -1,0 +1,16 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css'; // Optional: global styles for your app
+import App from './App'; // Import the main app component
+import reportWebVitals from './reportWebVitals'; // Optional: for performance tracking
+
+// Renders the App component to the root element in index.html
+ReactDOM.render(
+  <React.StrictMode>
+    <App /> {/* This renders your main app */}
+  </React.StrictMode>,
+  document.getElementById('root') // The element in index.html where the app will mount
+);
+
+// Optional: measuring performance and sending the results to an analytics endpoint
+reportWebVitals();
